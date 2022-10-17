@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="top">
+            <div class="left_top">
+                <p>Dashboard</p>
+                <button id="add_btn">Добавить задачу</button>
+            </div>
+            <input type="text" class="search" placeholder="Поиск по задачам">
+        </div>
+
+        <div class="show_as">
+            <span class="title_of_show">Показать задачи как:</span>
+            <span class="clicked" id="row_change">Таблица  </span>
+            <span class="unclicked" id="block_change">  Плитка</span>
+        </div>
+
+        <div class="title">
+            <div class="left">
+                <span>Заголовок задачи</span>
+                <span>Описание задачи</span>
+            </div>
+            <div class="right">
+                <span>Время</span>
+                <span>Время</span>
+                <span>Выполнено</span>
+            </div>
+        </div>
+        <div class="blya">
+            <!-- <div class="row">
+                <p>Переписать проект на Vue 3</p>
+    
+                <p class="dsc">Quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto</p>
+    
+                <div class="time">
+                    <p>21.10.21</p>
+                    <p>14:31</p>
+                </div>
+    
+                <p>Не выполнено</p>
+            </div> -->
+
+
+
+        </div>
+
+    </div class="container">
+    
+    <div class="modal_bg"></div>
+    <div class="modal">
+        <h1>Добавить</h1>
+        <form name="add">
+            <input name="title" type="text" placeholder="Заголовок" class="change_inp">
+            <input name="info" type="text" placeholder="Описание" class="change_inp">
+            <input name="data" type="time" placeholder="Время (type=time)" class="change_inp">
+            <input name="time" type="date" placeholder="Время (type=date)" class="change_inp">
+            <input name="ready" type="text" placeholder="Тип задачи (select - option - new/progress/done)" class="change_inp">
+            <button class="save">Добавить</button>
+        </form>
+    </div>
+
+    <div class="edit_bg modal_bg"></div>
+    <div class="edit_m modal">
+        <h1>Добавить</h1>
+        <form name="edit">
+            <input name="title" type="text" placeholder="Заголовок" class="change_inp">
+            <input name="info" type="text" placeholder="Описание" class="change_inp">
+            <input name="data" type="time" placeholder="Время (type=time)" class="change_inp">
+            <input name="time" type="date" placeholder="Время (type=date)" class="change_inp">
+            <input name="ready" type="text" placeholder="Тип задачи (select - option - new/progress/done)" class="change_inp">
+            <button class="edit save">Изменить</button>
+        </form>
+        <button class="delete">Удалить</button>
+    </div>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
